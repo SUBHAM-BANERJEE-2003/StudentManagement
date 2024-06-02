@@ -1,0 +1,24 @@
+{%  extends "base.html" %}
+
+{% block content %}
+<div class="main">
+    <div class="banner bg-gray-100 p-2">
+        <h1 class="p-10 flex justify-center align-center text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-500">STUDENT MANAGEMENT APP</h1>
+        <p class="p-4">Get started with the best student management app you have seen till now</p>
+        <div class="flex gap-8 justify-center align-cente">
+            <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-400 hover:bg-gray-100 rounded-xl" href="#">Learn More</a>
+            <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="/student">Get Started</a>
+        </div>
+    </div>
+
+    <div class="features p-2">
+        <h3 class="text-xl font-semibold">Features Implemented: </h3>
+        <ol>
+            <li class="p-4">Create a student </li>
+            <li class="p-4">Read a students Details </li>
+            <li class="p-4">Update a students Details </li>
+            <li class="p-4">Delete a student Details</li>
+        </ol>
+    </div>
+</div>
+{% endblock %}

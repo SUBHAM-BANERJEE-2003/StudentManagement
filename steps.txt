@@ -1,0 +1,16 @@
+1. start project
+>> python -m django startproject <projectname>
+2. create app
+>> python -m django startapp <appname>
+3. in settings.py add the app name in INSTALLED_APP array
+4. create a urls.py in the app file
+inside it write:
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home, name='home')
+]
+5. in the urls.py of the main project add  path('', include('<appname>.urls'))
+6. Make a templates folder in the app folder where you will keep your html code
+7. in the views file by using the render function.. there use render(request, 'ex.html')
